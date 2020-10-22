@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>计算器</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/jquery-3.5.1.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <!-- 窗口栏start -->
+    <header>
+      <span>
+        Calculator
+      </span>
+
+      <ul>
+        <li class="min"></li>
+        <li class="max"></li>
+        <li class="close"></li>
+      </ul>
+    </header>
+    <!-- 窗口栏end -->
+
+    <!-- 工具栏start -->
+    <div class="tool">
+      <div class="tool-left"></div>
+      <div class="tool-word">Standard</div>
+      <div class="tool-mid"></div>
+      <div class="tool-right"></div>
+    </div>
+    <!-- 工具栏end -->
+
+    <!-- 结果栏start -->
+    <div class="result">
+      <div class="show-parent">
+
+        <div class="show">0</div>
+      </div>
+      <div class="number-parent">
+
+        <div class="number">0</div>
+      </div>
+      <div class="list">
+        <ul>
+          <li>MC</li>
+          <li>MR</li>
+          <li><b>M+</b></li>
+          <li><b>M-</b></li>
+          <li><b>MS</b></li>
+          <li>Mˇ</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 结果栏end -->
+
+    <!-- 按键栏start -->
+    <div class="button">
+      <table>
+        <tr>
+          <td class="gray remainder">%</td>
+          <td class="gray">CE</td>
+          <td class="gray reset">C</td>
+          <td class="gray">
+            <div class="back"></div>
+          </td>
+        </tr>
+        <tr>
+          <td class="gray">1/x</td>
+          <td class="gray">x²</td>
+          <td class="gray root">2√x</td>
+          <td class="gray divide">÷</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+          <td class="gray multi">×</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <td class="gray sub">-</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <td class="gray add">+</td>
+        </tr>
+        <tr>
+          <th class="symbol">+/-</th>
+          <th>0</th>
+          <th>.</th>
+          <td class="blue equal">=</td>
+        </tr>
+      </table>
+    </div>
+    <!-- 按键栏end -->
+  </div>
+  <!-- 左方文字start -->
+  <div class="tip">
+    功能：可实现加 减 乘 除 取模运算 退格 点击C归零
+  </div>
+  <!-- 左方文字end -->
+
+  <!-- 作者start -->
+  <div class="author">
+    author：宋亚辉
+  </div>
+  <!-- 作者end -->
+</body>
+
+</html>

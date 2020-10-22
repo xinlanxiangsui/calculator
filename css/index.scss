@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+.content {
+  width: 320px;
+  height: 530px;
+  margin: 150px auto;
+  background-color: #e2dbd4;
+
+  header {
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    color: #1f1e1d;
+    overflow: hidden;
+
+    span {
+      padding-left: 10px;
+      line-height: 35px;
+    }
+
+    ul {
+      float: right;
+      width: 120px;
+      height: 100%;
+
+      li {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+        margin-left: 10px;
+      }
+
+      .min {
+        background: url("../img/减号.png") no-repeat;
+        background-size: 65%;
+
+      }
+
+      .max {
+        background: url("../img/方形.png") no-repeat;
+        background-size: 65%;
+
+      }
+
+      .close {
+        background: url("../img/叉号.png") no-repeat;
+        background-size: 65%;
+
+      }
+    }
+  }
+
+  .tool {
+    height: 40px;
+    overflow: hidden;
+
+    div {
+      float: left;
+    }
+
+    .tool-left,
+    .tool-mid,
+    .tool-right {
+      width: 25px;
+      height: 25px;
+      margin-top: 8px;
+      margin-left: 10px;
+      background: url("../img/列表 listing.png") no-repeat;
+      background-size: 100%;
+    }
+
+    .tool-word {
+      font-size: 18px;
+      padding-left: 12px;
+      line-height: 40px;
+      color: #000;
+      font-weight: 700;
+    }
+
+    .tool-mid {
+      margin-left: 20px;
+      background: url("../img/转发.png") no-repeat;
+      background-size: 100%;
+    }
+
+    .tool-right {
+      margin-left: 113px;
+      background: url("../img/重置时间.png") no-repeat;
+      background-size: 100%;
+    }
+  }
+
+  .result {
+    height: 135px;
+    overflow: hidden;
+
+    .number-parent {
+      height: 70px;
+
+      .number {
+        float: right;
+        font-weight: 700;
+        font-size: 42px;
+      }
+    }
+
+    .show-parent {
+      height: 30px;
+
+      .show {
+        float: right;
+        font-size: 20px;
+      }
+    }
+
+
+    .list {
+      ul {
+        display: flex;
+
+        li {
+          flex: 1;
+          padding-left: 20px;
+          padding-top: 8px;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  .button {
+    height: 320px;
+
+    table {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: #000;
+      font-size: 16px;
+
+      tr {
+        height: 44px;
+
+        td,
+        th {
+          width: 70px;
+          cursor: default;
+
+          .back {
+            width: 20px;
+            height: 20px;
+            background: url("../img/退格.png") no-repeat;
+            background-size: 100%;
+            margin-left: 29px;
+          }
+        }
+
+        th {
+          background-color: #f7f5f3;
+        }
+
+        .gray {
+          background-color: #ece5dd;
+        }
+
+        .blue {
+          background-color: #7ba4c7;
+        }
+
+
+      }
+    }
+  }
+}
+
+.tip {
+  position: fixed;
+  left: 167px;
+  top: 40px;
+  font-family: YouYuan, STXihei, SimHei;
+  font-size: 50px;
+}
+
+.selected {
+  background-color: #b7b7b8 !important;
+}
+
+.blueSelected {
+  background-color: #3a729c !important;
+}
+
+.author {
+  position: fixed;
+  right: 100px;
+  top: 520px;
+  font-family: YouYuan, STXihei, SimHei;
+  font-size: 50px;
+}
